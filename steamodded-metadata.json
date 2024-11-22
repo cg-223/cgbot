@@ -1,0 +1,17 @@
+{
+	"id": "cgbot",
+	"name": "cgbot",
+	"display_name": "CG Bot",
+	"author": ["cg"],
+	"description": "A random-seed Balatro bot.",
+	"prefix": "cgb",
+	"main_file": "loader.lua",
+	"priority": 2,
+	"version": "1.0.0",
+	"dependencies": [
+		{
+			"id": "Steamodded",
+			"min_version": "1.0.0~ALPHA-1030e"
+		}
+	]
+}
