@@ -4,6 +4,7 @@
 
 local modules = CGBOT.modules
 local api = modules.api
+local stateManager = modules.stateManager
 
 function api.update(dt)
     if api.inProgress then

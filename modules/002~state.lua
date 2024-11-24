@@ -23,3 +23,5 @@ end
 function stateManager.sanityCheck(state)
     return assert((state.compCheck and state.finalize and state.update), "Insane state: " .. inspect(state))
 end
+
+modules.stateManager.states = {}

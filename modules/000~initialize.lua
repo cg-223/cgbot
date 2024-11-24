@@ -22,7 +22,7 @@ CGBOT = {
         update = {
 
         },
-        state = {
+        stateManager = {
             
         },
         api = {

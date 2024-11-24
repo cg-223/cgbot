@@ -17,7 +17,7 @@ path = path .. "modules/"
 local modules = NFS.getDirectoryItems(path)
 table.sort(modules, sort_string_helper)
 
---sort the modules to load in alphabetical order (theyre all numbers, followed by a set amount of underscores)
+--sort the modules to load in alphabetical order (theyre all numbers aligned to the right, followed by one of tildes)
 
 for i, v in pairs(modules) do
     local pth = path .. v
