@@ -7,7 +7,7 @@
 	"prefix": "cgb",
 	"main_file": "loader.lua",
 	"priority": 2,
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"dependencies": [
 		{
 			"id": "Steamodded",
