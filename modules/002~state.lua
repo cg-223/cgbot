@@ -21,5 +21,5 @@ function stateManager.update(dt)
 end
 
 function stateManager.sanityCheck(state)
-    return state.compCheck and state.finalize and state.update
+    return assert((state.compCheck and state.finalize and state.update), "Insane state: " .. inspect(state))
 end
