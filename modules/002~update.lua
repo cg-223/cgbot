@@ -12,11 +12,26 @@ function love.update(dt)
 end
 
 
-CGBOT.modules.update.processUpdate = function(dt)
+modules.update.processUpdate = function(dt)
     if love.timer.getTime() - interval > last then
         local sinceLast = love.timer.getTime() - last
         last = love.timer.getTime()
         modules.api.update(sinceLast)
-        modules.state.update(sinceLast)
+        modules.stateManager.update(sinceLast)
     end
 end
+
+modules.stateManager.states.gamestart = {
+    compCheck = function(self)
+        
+    end,
+    update = function(self, dt)
+
+    end,
+    finalize = function(self)
+
+    end,
+    initialize = function(self)
+
+    end,
+}

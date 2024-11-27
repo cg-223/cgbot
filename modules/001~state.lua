@@ -11,11 +11,11 @@ function stateManager.update(dt)
         if not stateManager.sanityCheck(stateManager.curState) then
             stateManager.curState = stateManager.resetToDefaultState()
         end
-        if stateManager.curState.compCheck() then
-            stateManager.curState.finalize()
-            stateManager.curState = stateManager.curState.nextState.initialize()
+        if stateManager.curState:compCheck() then
+            stateManager.curState:finalize()
+            stateManager.curState = stateManager.curState.nextState:initialize()
         else
-            stateManager.curState.update(dt)
+            stateManager.curState:update(dt)
         end
     end
 end
